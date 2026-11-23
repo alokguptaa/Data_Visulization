@@ -1,0 +1,101 @@
+{
+  "kpi": {
+    "total_sales": 76731189.27,
+    "total_profit": 25127882.66,
+    "profit_margin": 0.32747938483763844,
+    "avg_order_value": 10961.598467142856,
+    "orders": 7000,
+    "return_rate": 0.12571428571428572
+  },
+  "cleaning": {
+    "rows_raw": 7084,
+    "unparsed_order_dates": 0,
+    "exact_duplicate_rows_removed": 84,
+    "repeated_transaction_ids_removed": 0,
+    "invalid_age_set_to_nan": 6,
+    "invalid_discount_set_to_nan": 6,
+    "extreme_income_set_to_nan": 70,
+    "delivery_before_order_set_to_nan": 15,
+    "rows_clean": 7000
+  },
+  "charts": [
+    {
+      "file": "01_monthly_sales_trend.png",
+      "title": "Monthly Sales Trend",
+      "section": "1. Overview: the sales trend",
+      "caption": "Sales were essentially flat in 2024 versus 2023 (\u20b938.7M \u2192 \u20b938.1M), but individual months swing widely, from \u20b92.3M in Jun 2024 to \u20b93.9M in Oct 2024. The business is not growing year on year, so management should look at what drives the strong months and the weak ones rather than assume a rising trend."
+    },
+    {
+      "file": "02_sales_by_region.png",
+      "title": "Total Sales by Region",
+      "section": "2. Where sales come from: region and category",
+      "caption": "East leads with \u20b920.0M (26% of sales), while North (highlighted) trails by 11% at \u20b918.1M. Regional totals are fairly close, so the gap is a targeted growth opportunity in North rather than a structural problem."
+    },
+    {
+      "file": "03_sales_by_category.png",
+      "title": "Total Sales by Product Category",
+      "section": "2. Where sales come from: region and category",
+      "caption": "Electronics alone brings in 49% of all sales (\u20b937.6M), far ahead of Office Supplies at \u20b92.6M. Revenue is concentrated in a few categories, so stock availability and pricing in Electronics matter most to the overall result."
+    },
+    {
+      "file": "04_age_distribution.png",
+      "title": "Distribution of Customer Age",
+      "section": "3. Who the customers are",
+      "caption": "Customer age is roughly symmetric (skewness 0.27) with mean and median both near 36 years, and 67% of transactions come from customers aged 25\u201345. Marketing and product mix should therefore be built around working-age adults rather than very young or senior buyers."
+    },
+    {
+      "file": "05_income_distribution.png",
+      "title": "Distribution of Customer Annual Income",
+      "section": "3. Who the customers are",
+      "caption": "Income is clearly right-skewed (skewness 0.94): the mean (\u20b953K) sits above the median (\u20b949K) because a small group of high earners pulls the average up. For planning, the median is the fairer picture of a typical customer, and premium offers can target the long upper tail."
+    },
+    {
+      "file": "06_segment_share_donut.png",
+      "title": "Share of Total Sales by Customer Segment",
+      "section": "3. Who the customers are",
+      "caption": "Consumer customers generate 54% of sales, with Corporate buyers adding 31% and Home Office 15%. Because Consumer accounts for most of the revenue, retention offers there protect the most sales, while Corporate and Home Office are the places to grow bulk and repeat orders."
+    },
+    {
+      "file": "07_profit_boxplot_by_category.png",
+      "title": "Profit per Transaction by Product Category",
+      "section": "4. Spread and relationships",
+      "caption": "Furniture has the highest typical profit per order (median \u20b96,717) and the widest spread (IQR \u20b98,234), while Grocery orders are small and consistent (median \u20b9407). The orange dots are unusually large orders; they are valuable, but they make profit from high-ticket categories much harder to forecast."
+    },
+    {
+      "file": "08_sales_vs_profit_scatter.png",
+      "title": "Sales vs Profit",
+      "section": "4. Spread and relationships",
+      "caption": "Sales and profit move together very closely (correlation 0.97); on average every extra \u20b9100 of sales adds about \u20b933 of profit. Profit margin stays steady at about 33%, so growing order value is a reliable way to grow profit."
+    },
+    {
+      "file": "09_discount_vs_profit_scatter.png",
+      "title": "Discount vs Profit",
+      "section": "4. Spread and relationships",
+      "caption": "The relationship between discount and profit is weak and negative (correlation -0.12); each extra 10 percentage points of discount lowers profit by about \u20b9505 per order on average. Discount level on its own does not explain profit, so discounts should be judged per category and order size rather than cut across the board."
+    },
+    {
+      "file": "10_correlation_heatmap.png",
+      "title": "Correlation Heatmap",
+      "section": "5. Combined heatmap view",
+      "caption": "The strongest link is between Profit and Sales (r = 0.97), meaning profit is driven mainly by how much is sold per order. Customer age and income show almost no correlation with sales or profit (correlations of at most 0.01), so order size matters far more than who the customer is."
+    },
+    {
+      "file": "11_category_region_heatmap.png",
+      "title": "Average Sales: Category x Region",
+      "section": "5. Combined heatmap view",
+      "caption": "Average order value is highest for Furniture in the West region (\u20b927,370) and lowest for Grocery in North (\u20b91,558). Category matters far more than region: within each category the average order is similar in all four regions, so regional growth will come from winning more orders, not from larger baskets."
+    },
+    {
+      "file": "12_return_rate_by_category.png",
+      "title": "Return Rate by Product Category",
+      "section": "6. Returns and satisfaction",
+      "caption": "Overall 12.6% of orders are returned, and Clothing is the worst category at 13.5% versus 11.5% for Office Supplies, a modest gap that shows returns are a business-wide issue. Returned orders represent \u20b99.0M of sales (12%), so fixing quality or description issues in Clothing would protect real revenue."
+    },
+    {
+      "file": "13_satisfaction_by_delivery.png",
+      "title": "Satisfaction by Delivery Mode",
+      "section": "6. Returns and satisfaction",
+      "caption": "'High' satisfaction is almost identical across delivery modes (37%\u201338%), and only about 24\u201327% of orders get a 'Low' rating (Standard is highest). Faster delivery does not buy higher satisfaction, so product quality and returns deserve more attention than shipping speed."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "rows_raw": 7084,
+  "unparsed_order_dates": 0,
+  "exact_duplicate_rows_removed": 84,
+  "repeated_transaction_ids_removed": 0,
+  "invalid_age_set_to_nan": 6,
+  "invalid_discount_set_to_nan": 6,
+  "extreme_income_set_to_nan": 70,
+  "delivery_before_order_set_to_nan": 15,
+  "rows_clean": 7000
+}
